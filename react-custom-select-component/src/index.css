@@ -1,0 +1,75 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.react-select {
+  /* display: flex; */
+  position: relative;
+}
+
+.react-select__search-input {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 8px;
+  padding: 5px;
+  border: 1px solid #ccc;
+  border-radius: 20px;
+}
+
+.react-select__search-input input {
+  border: none;
+  height: 20px;
+  padding: 5px;
+  width: 100%;
+  }
+  .react-select__search-input input:focus {
+  outline: none;
+  }
+
+
+
+  .react-select__search-input__suggestion-list{
+    max-height: 12rem;
+    overflow-y: scroll;
+    width: 100%;
+    border-radius: 0.4rem; 
+    /* background-color: rgb(250, 250, 250); */
+    border-radius: 0.4rem;
+  }
+
+  .react-select__search-input__suggestion-list .react-select__search-input__suggestion-list__item{
+    border-radius: 0.4rem;
+    cursor: pointer;
+    padding: 0.5rem;
+    margin: 0.1rem 0 ;
+    background-color: rgb(247, 247, 247);
+    transition: all .4s;
+  }
+  .react-select__search-input__suggestion-list .react-select__search-input__suggestion-list__item:hover{
+    background-color: rgb(230, 230, 230);
+  }
+
+  .react-select__search-input__pills{
+    display: flex;
+    flex-wrap: wrap; 
+    gap: 2px;
+    font-size: 0.4rem;
+  }
+  .react-select_search-input__pills-item{
+    background-color: rgb(215, 215, 215);
+
+    display: flex; gap: 0.4rem; align-items: center;
+    padding: 0.1rem 0.3rem;
+    border-radius: 0.4rem; 
+    
+  }
+  .react-select_search-input__pills-item span:nth-child(2){
+    background-color: rgb(145, 145, 145);
+    border-radius: 2rem;
+    padding: 0.1rem;
+    cursor: pointer;
+  }
